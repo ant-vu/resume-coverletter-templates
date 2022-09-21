@@ -1,0 +1,233 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{soul}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{F
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCustomHeading}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} $|$ \small{#2} & \emph{\small{#3}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\Cplusplus}{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+\newcommand{\Csharp}{C\nolinebreak\hspace{-0.05em}\raisebox{0.3ex}{\scriptsize\bf \#}}
+\newcommand{\numplus}[1]{#1\raisebox{0.4ex}{\tiny\textbf{+}}}
+
+\newcommand{\ExternalLink}{%
+    \hspace{1mm}
+    \tikz[x=1.25ex, y=1.25ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    \hspace{-2mm}
+    }
+
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Anthony Vu} \\ \vspace{1pt}
+    \small \href{tel:111-111-1111}{\ul{+1 (111) 111-1111}} $|$
+    \href{mailto:TODO@mcmaster.ca}{\ul{TODO@mcmaster.ca}} $|$ 
+    \href{https://linkedin.com/in/TODO/}{\ul{linkedin.com/in/TODO}} $|$
+    \href{https://github.com/TODO/}{\ul{github.com/TODO}} $|$
+    \href{https://TODO.vercel.app/}{\ul{TODO.vercel.app}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeCustomHeading{McMaster University}{Honours Computer Science Co-op (B.A.Sc.), Minor in Innovation}{Sep. 2020 - Apr. 2024}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+      
+    \resumeCustomHeading{University of North Carolina Wilmington}{Horatio Alger Scholarship Program}{Sep. 2020 - Apr. 2024}
+      \resumeItemListStart
+        \resumeItem{TODO}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \setlength\itemsep{0mm}
+        \item{
+         \textbf{Languages}{: TODO} \\
+        }
+        \item{
+         \textbf{Frameworks}{: TODO} \\
+        }
+        \item{
+         \textbf{Libraries}{: TODO} \\
+        }
+        \item{
+         \textbf{Databases}{: TODO} \\
+        }
+        \item{
+         \textbf{Tools}{: TODO} \\
+        }
+    }
+ \end{itemize}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeCustomHeading{BDO}{Full Stack Developer}{May 2022 - Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+      
+    \resumeCustomHeading{McMaster University}{Research Assistant}{May 2021 - Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeCustomHeading{\href{https://TODO.netlify.app/}{TODO\ExternalLink}}{TODO}{}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+
+    \resumeCustomHeading{\href{https://TODO.vercel.app/}{TODO\ExternalLink}}{TODO}{}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+
+    \resumeCustomHeading{\href{https://TODO.netlify.app/}{TODO\ExternalLink}}{TODO}{}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+\section{Organizations}
+    \resumeSubHeadingListStart
+
+    \resumeCustomHeading{St. Patrick Parish}{Lector, Altar Server, Youth Leader, De Mazenod Door Volunteer}{Sep. 2010 - PRESENT}
+      \resumeItemListStart
+        \resumeItem{TODO}
+        \resumeItem{TODO}
+      \resumeItemListEnd
+ 
+    \resumeSubHeadingListEnd
+
+\end{document}
